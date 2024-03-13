@@ -1,0 +1,26 @@
+.question {
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.question__text {
+  margin-left: 10px;
+}
+
+.question__spacer {
+  width: 70px;
+}
+
+.question__answers-wrapper {
+  display: flex;
+}
+
+.question__answer-option {
+  display: flex;
+  margin-right: 10px;
+}

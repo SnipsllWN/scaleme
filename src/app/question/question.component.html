@@ -1,0 +1,14 @@
+<div class="question">
+  <div class="question__text">
+    {{ question }}
+  </div>
+  <div class="question__spacer">
+
+  </div>
+  <div class="question__answers-wrapper">
+    <div class="question__answer-option" *ngFor="let option of questionService.answerOptions">
+      <input type="checkbox">
+      {{option}}
+    </div>
+  </div>
+</div>

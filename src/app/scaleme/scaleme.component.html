@@ -1,0 +1,14 @@
+<div class="scaleme">
+  <div class="scaleme__name-wrapper">
+    name:
+    <input type="text" class="scaleme__name-input" [(ngModel)]="name">
+  </div>
+  <div class="scaleme__questions-wrapper">
+    <div *ngFor="let question of questionService.questions" class="scaleme_question-wrapper">
+      <app-question [question]="question"></app-question>
+    </div>
+  </div>
+
+
+</div>
+
