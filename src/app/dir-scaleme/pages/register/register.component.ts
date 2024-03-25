@@ -20,7 +20,7 @@ export class RegisterComponent {
   }
 
   clickRegister(){
-
+    this.routeService.route = this.routeService.routes.login;
   }
 
   clickLoginLink() {

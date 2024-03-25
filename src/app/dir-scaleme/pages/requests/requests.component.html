@@ -1,13 +1,13 @@
 <div class="requests">
   <div class="requests__top-bar">
     <div class="requests__logout-button-wrapper">
-      <img class="requests__logout-button" ngSrc="../../../../assets/power-on-off.svg" height="24" width="24" alt="logout"/>
+      <img class="requests__logout-button" ngSrc="../../../../assets/power-on-off.svg" height="24" width="24" alt="logout" (click)="clickLogoutBtn()"/>
     </div>
     <div class="requests__title">
       Requests
     </div>
     <div class="requests__copy-link-button-wrapper">
-      <div class="requests__copy-link-button">
+      <div class="requests__copy-link-button" (click)="clickCopyLinkBtn()">
         copy Link
       </div>
     </div>
@@ -15,7 +15,7 @@
   <div class="requests__bottom">
     <div class="requests__content">
       <div class="requests__request-box-wrapper"  *ngFor="let request of requestsList">
-        <app-request-box [requestdetail]="request">
+        <app-request-box [requestdetail]="request"  (click)="clickRequestBtn(request.id)">
 
         </app-request-box>
       </div>
@@ -27,7 +27,7 @@
       </div>
       <div class="requests__add-button-wrapper">
         <div class="requests__add-button-box">
-          <img class="requests__add-button-icon" ngSrc="../../../../assets/plus.svg" height="24" width="24">
+          <img class="requests__add-button-icon" ngSrc="../../../../assets/plus.svg" height="24" width="24" (click)="clickBtnNew()">
         </div>
 
       </div>

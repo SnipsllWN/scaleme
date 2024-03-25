@@ -1,24 +1,24 @@
 <div class="nanswer">
   <div class="nanswer__top-bar">
     <div class="nanswer__back-button-wrapper">
-      <img class="nanswer__back-button" ngSrc="../../../../assets/back.svg" height="24" width="24" alt="back"/>
+      <img class="nanswer__back-button" ngSrc="../../../../assets/back.svg" height="24" width="24" alt="back" (click)="clickBackBtn()"/>
     </div>
     <div class="nanswer__title">
       Answeroptions
     </div>
   </div>
   <div class="nanswer__answers">
-
+    <app-answerquestion-box [text]="answer" *ngFor="let answer of answers"></app-answerquestion-box>
   </div>
   <div class="nanswer__add-answer-wrapper">
-    <input class="nanswer__add-answer-input">
+    <input class="nanswer__add-answer-input" [(ngModel)]="inputText">
     <div class="nanswer__add-answer-button">
-      <img ngSrc="assets/plus.svg" height="30" width="30">
+      <img ngSrc="assets/plus.svg" height="30" width="30" (click)="clickAddBtn()">
     </div>
   </div>
   <div class="nanswer__bottom">
-    <div class="nanswer__weiter-button">
-      weiter
+    <div class="nanswer__weiter-button" (click)="clickNextBtn()">
+      erstellen
     </div>
   </div>
 </div>

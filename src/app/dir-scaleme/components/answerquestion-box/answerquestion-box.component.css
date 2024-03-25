@@ -1,0 +1,35 @@
+.answerquestion-box {
+  width: calc(100% - 6px);
+  min-height: 50px;
+  border: 3px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  margin-bottom: 5px;
+}
+
+.answerquestion-box__answerquestion-wrapper {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: 20px;
+  word-break: break-word;
+  max-width: 300px;
+}
+
+.answerquestion-box__delete-button {
+  border: 3px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.answerquestion-box__delete-button:hover {
+  background-color: aliceblue;
+}

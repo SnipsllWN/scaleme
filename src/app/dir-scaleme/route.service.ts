@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class RouteService {
 
-  public route: number = 5;
+  public route: number = 3;
+  public routeParams = '1';
   public routes = RoutesEnum;
   constructor() {
 
@@ -14,7 +15,7 @@ export class RouteService {
 enum RoutesEnum {
   login ,
   register,
-  home ,
+  request ,
   requests,
   nquestion,
   nanswer

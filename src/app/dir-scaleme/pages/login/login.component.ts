@@ -18,8 +18,8 @@ export class LoginComponent {
   constructor(public routeService: RouteService) {
   }
 
-  clickLogin(){
-
+  clickLoginBtn(){
+    this.routeService.route = this.routeService.routes.requests;
   }
 
   clickRegisterLink() {

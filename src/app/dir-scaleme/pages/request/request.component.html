@@ -1,0 +1,22 @@
+<div class="request">
+  <div class="request__top-bar">
+    <div class="request__back-button-wrapper">
+      <img class="request__back-button" ngSrc="../../../../assets/back.svg" height="24" width="24" alt="back" (click)="clickBackBtn()"/>
+    </div>
+    <div class="request__title">
+      {{ request.name }}
+    </div>
+  </div>
+  <div class="request__content">
+    <div class="request__question-box" *ngFor="let question of request.questions">
+      <app-request-question-box [question]="question" [answerOptionsInput]="request.answeroptions">
+
+      </app-request-question-box>
+    </div>
+  </div>
+  <div class="request__bottom">
+    <div class="request__submit-button" (click)="clickSubmitBtn()">
+      Submit
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="request-question-box">
+  <div class="request-question-box__question-wrapper">
+    {{question}}
+  </div>
+  <div class="request-question-box__answers-wrapper">
+    <div class="request-question-box__answer-wrapper" *ngFor="let answer of answerOptions" (click)="selectAnswer(answer.id)">
+      <div class="request-question-box__answer-not-selected" *ngIf="!answer.selected; else selectedAnswer">
+        {{answer.answer}}
+      </div>
+      <ng-template #selectedAnswer>
+        <div class="request-question-box__answer-selected">
+          {{answer.answer}}
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

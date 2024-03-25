@@ -5,9 +5,6 @@
   @case (routeService.routes.register){
     <app-register></app-register>
   }
-  @case (routeService.routes.home){
-    <app-home></app-home>
-  }
   @case (routeService.routes.nanswer){
     <app-nanswer></app-nanswer>
   }
@@ -16,6 +13,9 @@
   }
   @case (routeService.routes.requests){
     <app-requests></app-requests>
+  }
+  @case (routeService.routes.request){
+    <app-request routeParams="{{routeService.routeParams}}"></app-request>
   }
   @default {
     <app-login></app-login>

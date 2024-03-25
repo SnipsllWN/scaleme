@@ -1,1 +1,24 @@
-<p>nquestion works!</p>
+<div class="nquestion">
+  <div class="nquestion__top-bar">
+    <div class="nquestion__back-button-wrapper">
+      <img class="nquestion__back-button" ngSrc="../../../../assets/back.svg" height="24" width="24" alt="back" (click)="clickBackBtn()"/>
+    </div>
+    <div class="nquestion__title">
+      Questions
+    </div>
+  </div>
+  <div class="nquestion__answers">
+    <app-answerquestion-box [text]="question" *ngFor="let question of questions"></app-answerquestion-box>
+  </div>
+  <div class="nquestion__add-answer-wrapper">
+    <input class="nquestion__add-answer-input" [(ngModel)]="inputText">
+    <div class="nquestion__add-answer-button">
+      <img ngSrc="assets/plus.svg" height="30" width="30" (click)="clickAddBtn()">
+    </div>
+  </div>
+  <div class="nquestion__bottom">
+    <div class="nquestion__weiter-button" (click)="clickNextBtn()">
+      weiter
+    </div>
+  </div>
+</div>
