@@ -1,0 +1,88 @@
+.register {
+  border: 5px solid black;
+  border-radius: 5px;
+  height: 40vh;
+  width: 50vh;
+  position: absolute;
+  top: calc(50% - 30vh - 5px);
+  left: calc(50% - 25vh - 5px);
+  user-select: none;
+}
+
+.register__title {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.register__inputs-wrapper {
+  margin-top: 70px;
+  padding: 0 30px;
+  width: calc(100% - 60px);
+  height: calc(45% - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register__input-wrapper {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register__input-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 29px;
+}
+
+.register__input-input {
+  width: 70%;
+  height: 40px;
+  font-size: 29px;
+}
+
+.register__register-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 60px;
+}
+
+.register__register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 50px;
+  padding: 0 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.register__register-button:hover {
+  background-color: aliceblue;
+}
+
+.register__login-link-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 20px;
+}
+
+.register__login-link {
+  cursor: pointer;
+}
+
+.register__login-link:hover {
+  color: blue;
+}

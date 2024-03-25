@@ -1,0 +1,29 @@
+<div class="register">
+  <div class="register__title">
+    register
+  </div>
+  <div class="register__inputs-wrapper">
+    <div class="register__input-wrapper">
+      <div class="register__input-label">
+        username
+      </div>
+      <input type="text" class="register__input-input" [(ngModel)]="username">
+    </div>
+    <div class="register__input-wrapper">
+      <div class="register__input-label">
+        password
+      </div>
+      <input type="password" class="register__input-input" [(ngModel)]="password">
+    </div>
+  </div>
+  <div class="register__register-button-wrapper">
+    <div class="register__register-button" (click)="clickRegister()">
+      register
+    </div>
+  </div>
+  <div class="register__login-link-wrapper">
+    <div class="register__login-link" (click)="clickLoginLink()">
+      back to login
+    </div>
+  </div>
+</div>

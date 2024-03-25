@@ -1,1 +1,23 @@
-<app-scaleme></app-scaleme>
+@switch (routeService.route){
+  @case (routeService.routes.login){
+    <app-login></app-login>
+  }
+  @case (routeService.routes.register){
+    <app-register></app-register>
+  }
+  @case (routeService.routes.home){
+    <app-home></app-home>
+  }
+  @case (routeService.routes.nanswer){
+    <app-nanswer></app-nanswer>
+  }
+  @case (routeService.routes.nquestion){
+    <app-nquestion></app-nquestion>
+  }
+  @case (routeService.routes.requests){
+    <app-requests></app-requests>
+  }
+  @default {
+    <app-login></app-login>
+  }
+}

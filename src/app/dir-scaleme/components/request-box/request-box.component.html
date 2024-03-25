@@ -1,0 +1,12 @@
+<div class="request-box">
+  <div class="request-box__status-wrapper">
+    @if (requestdetail?.finished === true){
+      <img ngSrc="assets/completed.svg" height="50" width="50">
+    } @else {
+      <img ngSrc="assets/circle.svg" height="50" width="50">
+    }
+  </div>
+  <div class="request-box__name-wrapper">
+    {{requestdetail?.name}}
+  </div>
+</div>
